@@ -1,0 +1,50 @@
+/* Estilo del fondo general (Navy Oscuro) */
+.root {
+    -fx-background-color: #0A192F;
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Estilo para los campos de texto y combo box */
+.text-field, .combo-box {
+    -fx-pref-width: 280px;
+    -fx-padding: 8px;
+    -fx-border-radius: 6px;
+    -fx-background-radius: 6px;
+    -fx-background-color: #112240;
+    -fx-text-fill: #FFFFFF;
+    -fx-prompt-text-fill: #E0F7FA; /* Texto de sugerencia (placeholder) en blanco/celeste claro */
+    -fx-border-color: #64FFDA;
+    -fx-border-width: 1px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #64FFDA;
+    -fx-effect: dropshadow(three-pass-box, rgba(100, 255, 218, 0.4), 6, 0, 0, 0);
+}
+
+/* Forzar color blanco en el texto seleccionado o interno del ComboBox */
+.combo-box .cell {
+    -fx-text-fill: #000000;
+}
+
+/* Estilo para los botones (Azul Celeste) */
+.button {
+    -fx-background-color: #0077B6;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-pref-width: 280px;
+    -fx-padding: 10px;
+    -fx-background-radius: 6px;
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0096C7;
+}
+
+/* Estilo de los textos y etiquetas */
+.label {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFFFFF; /* Texto principal en blanco puro */
+}
